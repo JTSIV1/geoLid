@@ -56,7 +56,7 @@ def download_model(model = "all", data_dir = None):
             url = model_list[name]
             
             #Download to the data directory
-            urllib.request.urlretrieve(url, os.path.join(data_dir, model))
+            urllib.request.urlretrieve(url, os.path.join(data_dir, "geolid."+name+".bin"))
     
     print("Finished downloading to ", os.path.join(data_dir))
 #-----------------------------------------------------------------------------------------------
